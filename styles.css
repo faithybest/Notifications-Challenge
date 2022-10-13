@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+ }
+.attribution a {
+     color:var(--Attribute)
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2 : hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+    --red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --Attribute: hsl(228, 45%, 44%);
+}
+
+body{
+    background-color:var(--Lightgrayishblue1); 
+    margin: 40px 0 70px 0; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.background{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 10px;  
+   
+}
+
+.background .notification{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center; 
+    margin:50px 0 40px 0 ;
+}
+
+.text-number #number{
+    padding: 3px 13px 3px 13px;
+    background-color: var(--Attribute);
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.background .notification .text-number .notification-text{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    letter-spacing: 0.08rem;
+}
+
+.background .notification #mark-all{
+    font-size: 0.8em;
+    line-height: 0.9rem;
+    letter-spacing: 0.08rem;
+    cursor: pointer;
+}
+
+.background .notification #mark-all:hover{
+    color:var(--Blue);
+    font-weight: bolder;
+}
+.text-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-seen{
+    margin-top: 5px;
+    font-weight: lighter;
+    font-size: small;
+}
+.responds{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.active, .not-active{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.active .circle::after{
+    content:"";
+    background-color: var(--red);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.first-person, .second-person, .third-person, .first-active, .second-active, .third-active, .fouth-active{
+    display:grid;   /*come back here*/
+    grid-template-columns: 1fr 5fr;
+    column-gap: 2rem;
+    padding: 35px;
+    margin-bottom: 20px; 
+    background-color: var(--Verylightgrayishblue);
+}
+
+/*.first-person, .second-person, .third-person, .second-active, .third-active, .fouth-active{
+    background-color: var(--Verylightgrayishblue); 
+    display: flex;
+    justify-content: flex-start;
+    gap:2rem;
+    align-items: center;
+    padding: 35px;
+    margin-bottom: 20px; 
+}*/
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;
+}
+.second-active{
+    padding: 0px 0px 0px 35px;
+}
+.first-active, .second-active, .flex, .third-active, .fouth-active{
+    background-color: white;
+} 
+.person-image{
+    width: 70px;
+}
+
+img{
+    width: 100%;
+}
+.name{
+    font-weight: bolder;
+    cursor: pointer;
+    color: var(--Verydarkblue);
+}
+.name:hover{
+    color:var(--Blue);
+}
+.comment{
+    font-weight: bold;
+    cursor: pointer;
+}
+.details{
+    display: flex;
+    flex-direction: column;  
+}
+.reaction{
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+.occupation{
+    color:var(--Attribute);
+    cursor: pointer;
+}
+.flex{
+    display:flex;
+    justify-content: space- space-between;                     ;
+    align-items: center;
+}
+
+.private{
+    margin:35px 0 15px 0;
+    padding: 1rem;
+    font-size: 14px; 
+    border:1px solid var(--Lightgrayishblue2);
+    border-radius: .3rem;
+    line-height: 1.4rem;
+    cursor: pointer;
+    width: 100%;
+    
+}
+.private:hover{
+    background-color: var(--Lightgrayishblue1);
+}
+
+.attribution{
+    margin: 40px;
+}
+
+
+@media screen and (max-width:520px) {
+
+    body{
+        background-color:var(--White); 
+        margin: 0px; 
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .background{
+        width: 100%;
+        border-radius: 10px;  
+    }
+}
+
+@media screen and (max-width:454px) {
+    .active, .not-active{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .name{
+        font-size: 14px;
+        line-height: 1.3rem
+    }
+
+     
+    .comment, .details, .reaction, .occupation,.number-of-times{
+        margin:0;
+        font-size: 13px; 
+        line-height: 1.3rem;
+    }
+    .private{
+        font-size: 13px; 
+        line-height: 1.3rem;
+        padding: 0.3rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .background .notification{ 
+        margin:0px;
+        padding: 35px;
+    }
+
+    .text-number #number{
+        padding: 2px 5px 2px 5px;
+        margin:0 5px 0 5px;
+    }
+    .background .notification .text-number .notification-text{
+        font-weight: bolder;
+        font-size: 1.3rem;
+        letter-spacing: 0.04rem;
+    }
+    
+    .background .notification #mark-all{
+        font-size: 0.6em;
+        line-height: 0.4rem;
+        letter-spacing: 0.05rem;
+    }
+    .active .circle::after{
+        content:"";
+        background-color: var(--red);
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        border-radius: 50%;
+        margin-left: 5px;
+    }
+    .name, .comment, .details, .reaction, .occupation, .number-of-times{
+        margin:0;
+        font-size: 12px; 
+        line-height: 1.2rem;
+    }
+
+    .private{
+       
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,800;1,500;1,800&family=Public+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Notifications page</title>
+  
+</head>
+<body>
+  
+  <div class="background">
+
+    <div class="notification"> 
+      <div class="text-number">  
+        <h2 class="notification-text">Notifications </h2>
+        <span id="number"></span>
+      </div>
+      <p id="mark-all">Mark all as read</p>
+    </div>
+
+    <main class="responds">
+      <div class="active">
+
+        <div class="first-person  unread">
+          <div class="person-image">
+            <img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber">
+          </div>
+          <div class="details">
+            
+              <p><span class="name">Mark Webber </span> <span class="reaction"> reacted to your recent post <span class="comment circle">My first tournament today!</span></p>
+            
+            <span class="last-seen">1m ago</span>
+          </div>
+        </div>
+
+        <div class="second-person  unread">
+          <div class="person-image">
+            <img alt="Angela Gray" src="/assets/images/avatar-angela-gray.webp">
+          </div>
+          <div class="details">
+            <div><span class="name">Angela Gray</span> <span class="reaction circle">
+              followed you</span> </div>
+              <span class="last-seen">5m ago</span>
+          </div>
+        </div>
+
+        <div class="third-person  unread">
+          <div class="person-image">
+            <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson">
+          </div>
+          <div class="details">
+            <p><span class="name">Jacob Thompson</span> <span class="reaction"> has joined your group</span> <span class="occupation circle">
+              Chess Club</span></p>
+            <span class="last-seen">1m ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="not-active">
+        <div class="first-active">
+          <div class="person-image">
+            <img src="assets/images/avatar-rizky-hasanuddin.webp">
+          </div>
+          <div class="not-active-details">
+            <p>
+              <span class="name">Rizky Hasanuddin</span> <span class="reaction">sent you a private message</span>
+            </p>
+            <p class="last-seen">5 days ago</p>
+            <p class="private">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="second-active">
+            <div class="person-image">
+              <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+            </div>
+            <div class="details">
+              <p><span class="name">Kimberly Smith</span> <span class="reaction"></span><span class="reaction">commented on your picture</span> </p>
+              <p class="last-seen">1 week ago</p>
+            </div>
+          </div>
+          <div class="side person-image">
+            <img src="assets/images/image-chess.webp">
+          </div>
+        </div>
+
+        <div class="third-active">
+          <div class="person-image">
+            <img src="assets/images/avatar-nathan-peterson.webp">
+          </div>
+          
+          <div class="not-active-details">
+            <p>
+              <span class="name">Nathan Peterson</span><span class="reaction"> reacted to your recent post </span> <span class="number-of-times"> 5 end-game strategies to increase your win rate</span>
+            </p>
+            <p class="last-seen">2 weeks </p>   
+          </div>
+        </div>
+
+        <div class="fouth-active">
+          <div class="person-image">
+            <img src="assets/images/avatar-anna-kim.webp">
+          </div>
+          <div class="not-active-details">
+            <p>
+              <span class="name">Anna Kim</span> <span class="reaction">left the group </span> <span class="occupation"> Chess Club </span>
+            </p>
+            <p class="last-seen">2 weeks </p>
+            
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">faithyBest</a>.
+  </div>
+
+  <script src="actions.js"></script>
+
+</body>
+</html>
+
+  
+
+  
+  
+
+   
+
+
+  
+  <!--
+
+   
+  
+  
+   
+  
+
+  
+ 
+
+  
+  
+  
+ 
